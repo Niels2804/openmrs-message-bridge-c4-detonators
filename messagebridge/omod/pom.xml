@@ -9,8 +9,8 @@
 
 	<artifactId>messagebridge-omod</artifactId>
 	<packaging>jar</packaging>
-	<name>Message bridge OMOD</name>
-	<description>Omod submodule for Message bridge</description>
+	<name>Messagebridge OMOD</name>
+	<description>Omod submodule for Messagebridge</description>
 
 	<dependencies>
         <dependency>

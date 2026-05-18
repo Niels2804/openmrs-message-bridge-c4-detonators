@@ -1,0 +1,2 @@
+org\openmrs\module\messagebridge\api\MessagebridgeServiceTest.class
+org\openmrs\module\messagebridge\api\dao\MessagebridgeDaoTest.class

@@ -1,0 +1,6 @@
+org\openmrs\module\messagebridge\MessagebridgeActivator.class
+org\openmrs\module\messagebridge\api\impl\MessagebridgeServiceImpl.class
+org\openmrs\module\messagebridge\Item.class
+org\openmrs\module\messagebridge\api\dao\MessagebridgeDao.class
+org\openmrs\module\messagebridge\api\MessagebridgeService.class
+org\openmrs\module\messagebridge\MessagebridgeConfig.class

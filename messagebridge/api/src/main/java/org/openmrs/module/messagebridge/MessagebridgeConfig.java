@@ -17,5 +17,5 @@ import org.springframework.stereotype.Component;
 @Component("messagebridge.MessagebridgeConfig")
 public class MessagebridgeConfig {
 	
-	public final static String MODULE_PRIVILEGE = "Message bridge Privilege";
+	public final static String MODULE_PRIVILEGE = "Messagebridge Privilege";
 }

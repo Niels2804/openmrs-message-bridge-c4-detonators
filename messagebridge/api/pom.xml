@@ -9,6 +9,6 @@
 
 	<artifactId>messagebridge-api</artifactId>
 	<packaging>jar</packaging>
-	<name>Message bridge API</name>
-	<description>API project for Message bridge</description>
+	<name>Messagebridge API</name>
+	<description>API project for Messagebridge</description>
 </project>

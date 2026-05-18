@@ -24,14 +24,14 @@ public class MessagebridgeActivator extends BaseModuleActivator {
 	 * @see #started()
 	 */
 	public void started() {
-		log.info("Started Message bridge");
+		log.info("Started Messagebridge");
 	}
 	
 	/**
 	 * @see #shutdown()
 	 */
 	public void shutdown() {
-		log.info("Shutdown Message bridge");
+		log.info("Shutdown Messagebridge");
 	}
 	
 }
