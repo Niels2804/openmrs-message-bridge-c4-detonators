@@ -1,37 +1,39 @@
-/**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0. If a copy of the MPL was not distributed with this file, You can
- * obtain one at http://mozilla.org/MPL/2.0/. OpenMRS is also distributed under
- * the terms of the Healthcare Disclaimer located at http://openmrs.org/license.
- *
- * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
- * graphic logo is a trademark of OpenMRS Inc.
- */
 package org.openmrs.module.messagebridge;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.BaseModuleActivator;
+import org.openmrs.module.ModuleActivator;
+import org.openmrs.module.ModuleException;
 
-/**
- * This class contains the logic that is run every time this module is either started or shutdown
- */
-public class DefaultActivator extends BaseModuleActivator {
+public class DefaultActivator extends BaseModuleActivator implements ModuleActivator {
 	
-	private Log log = LogFactory.getLog(this.getClass());
+	private final Log log = LogFactory.getLog(getClass());
 	
-	/**
-	 * @see #started()
-	 */
+	@Override
+	public void willRefreshContext() throws ModuleException {
+		log.info("messagebridge: willRefreshContext");
+	}
+	
+	@Override
+	public void contextRefreshed() {
+		log.info("messagebridge: contextRefreshed");
+	}
+	
+	@Override
 	public void started() {
-		log.info("Started Default");
+		System.out.println(">>> messagebridge STARTED (SYSTEM.OUT)");
+		log.info("messagebridge STARTED (LOG)");
 	}
 	
-	/**
-	 * @see #shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutdown Default");
+	@Override
+	public void willStop() throws ModuleException {
+		log.info("messagebridge: willStop");
 	}
 	
+	@Override
+	public void stopped() {
+		System.out.println(">>> messagebridge STOPPED (SYSTEM.OUT)");
+		log.info("messagebridge STOPPED (LOG)");
+	}
 }

@@ -12,8 +12,8 @@
 	<artifactId>messagebridge</artifactId>
 	<version>default</version>
 	<packaging>pom</packaging>
-	<name>Default</name>
-	<description>default</description>
+	<name>Message Bridge</name>
+	<description>Message Bridge module for OpenMRS</description>
 
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 

@@ -4,12 +4,12 @@
 	
 	<!-- Base Module Properties -->
 	<id>messagebridge</id>
-	<name>Default</name>
+	<name>Message Bridge</name>
 	<version>default</version>
 	<package>org.openmrs.module.messagebridge</package>
 	<author>niels</author>
 	<description>
-			default
+			Message Bridge module for OpenMRS
 	</description>
 
 	<activator>org.openmrs.module.messagebridge.DefaultActivator</activator>
