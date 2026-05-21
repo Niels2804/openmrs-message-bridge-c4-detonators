@@ -1,6 +1,5 @@
-org\openmrs\module\messagebridge\DefaultConfig.class
-org\openmrs\module\messagebridge\api\DefaultService.class
-org\openmrs\module\messagebridge\api\dao\DefaultDao.class
-org\openmrs\module\messagebridge\Item.class
-org\openmrs\module\messagebridge\api\impl\DefaultServiceImpl.class
-org\openmrs\module\messagebridge\DefaultActivator.class
+org\openmrs\module\messagebridge\util\WebhookSender.class
+org\openmrs\module\messagebridge\api\impl\MessageBridgeServiceImpl.class
+org\openmrs\module\messagebridge\MessageBridgeActivator.class
+org\openmrs\module\messagebridge\model\AppointmentWebhookPayload.class
+org\openmrs\module\messagebridge\api\impl\AppointmentSaveHandler.class

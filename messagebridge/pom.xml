@@ -10,10 +10,11 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>messagebridge</artifactId>
-	<version>default</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Message Bridge</name>
-	<description>Message Bridge module for OpenMRS</description>
+
+	<name>Message Bridge Module</name>
+	<description>Sends appointment webhooks to external message service</description>
 
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 
@@ -159,6 +160,6 @@
 	</pluginRepositories>
 
 	<properties>
-		<openmrsPlatformVersion>2.0.0</openmrsPlatformVersion>
+		<openmrsPlatformVersion>2.5.0</openmrsPlatformVersion>
 	</properties>
 </project>

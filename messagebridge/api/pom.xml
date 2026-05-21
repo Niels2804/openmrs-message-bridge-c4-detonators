@@ -11,4 +11,20 @@
 	<packaging>jar</packaging>
 	<name>Default API</name>
 	<description>API project for Default</description>
+	<dependencies>
+
+		<dependency>
+			<groupId>org.openmrs.api</groupId>
+			<artifactId>openmrs-api</artifactId>
+			<version>${openmrsPlatformVersion}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.15.2</version>
+		</dependency>
+
+	</dependencies>
 </project>

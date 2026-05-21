@@ -12,7 +12,7 @@
 			Message Bridge module for OpenMRS
 	</description>
 
-	<activator>org.openmrs.module.messagebridge.DefaultActivator</activator>
+	<activator>org.openmrs.module.messagebridge.MessageBridgeActivator</activator>	
 	
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/messagebridge/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->

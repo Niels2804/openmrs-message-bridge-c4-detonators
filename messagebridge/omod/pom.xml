@@ -8,7 +8,7 @@
 	</parent>
 
 	<artifactId>messagebridge-omod</artifactId>
-	<packaging>jar</packaging>
+	<packaging>omod</packaging>
 	<name>Default OMOD</name>
 	<description>Omod submodule for Default</description>
 
