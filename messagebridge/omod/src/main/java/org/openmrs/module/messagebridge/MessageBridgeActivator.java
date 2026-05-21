@@ -10,11 +10,11 @@ public class MessageBridgeActivator extends BaseModuleActivator {
 	
 	@Override
 	public void started() {
-		System.out.println("MessageBridge module started");
+		log.info("MessageBridge module started");
 	}
 	
 	@Override
 	public void stopped() {
-		System.out.println("MessageBridge module stopped");
+		log.info("MessageBridge module stopped");
 	}
 }
