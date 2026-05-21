@@ -6,6 +6,9 @@ public class AppointmentWebhookPayload {
 	
 	private String event;
 	
+	public AppointmentWebhookPayload() {
+	}
+	
 	public AppointmentWebhookPayload(String appointmentUuid, String event) {
 		this.appointmentUuid = appointmentUuid;
 		this.event = event;

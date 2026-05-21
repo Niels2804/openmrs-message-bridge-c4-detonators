@@ -12,23 +12,21 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <!-- scans services -->
     <context:component-scan base-package="org.openmrs.module.messagebridge"/>
 
-    <!-- advice bean -->
     <bean id="appointmentServiceAdvice"
           class="org.openmrs.module.messagebridge.api.impl.AppointmentServiceAdvice"/>
 
-    <!-- AOP intercept -->
     <aop:config>
 
         <aop:pointcut id="appointmentCreate"
             expression="execution(* org.openmrs.api.AppointmentService.create*(..))"/>
 
-        <aop:after-returning pointcut-ref="appointmentCreate"
-                             method="afterCreate"
-                             returning="returnValue"
-                             ref="appointmentServiceAdvice"/>
+        <aop:after-returning
+                pointcut-ref="appointmentCreate"
+                method="afterCreate"
+                returning="returnValue"
+                ref="appointmentServiceAdvice"/>
 
     </aop:config>
 
