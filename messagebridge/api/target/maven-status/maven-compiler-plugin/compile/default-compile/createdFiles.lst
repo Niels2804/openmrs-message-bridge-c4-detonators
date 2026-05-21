@@ -1,5 +1,0 @@
-org\openmrs\module\messagebridge\util\WebhookSender.class
-org\openmrs\module\messagebridge\api\impl\MessageBridgeServiceImpl.class
-org\openmrs\module\messagebridge\MessageBridgeActivator.class
-org\openmrs\module\messagebridge\model\AppointmentWebhookPayload.class
-org\openmrs\module\messagebridge\api\impl\AppointmentSaveHandler.class

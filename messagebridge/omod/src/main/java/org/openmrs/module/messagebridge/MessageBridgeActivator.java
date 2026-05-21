@@ -6,15 +6,15 @@ import org.openmrs.module.BaseModuleActivator;
 
 public class MessageBridgeActivator extends BaseModuleActivator {
 	
-	protected Log log = LogFactory.getLog(getClass());
+	private final Log log = LogFactory.getLog(getClass());
 	
 	@Override
 	public void started() {
-		log.info("Message Bridge module started");
+		System.out.println("MessageBridge module started");
 	}
 	
 	@Override
 	public void stopped() {
-		log.info("Message Bridge module stopped");
+		System.out.println("MessageBridge module stopped");
 	}
 }

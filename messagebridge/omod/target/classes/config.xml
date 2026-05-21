@@ -4,12 +4,12 @@
 	
 	<!-- Base Module Properties -->
 	<id>messagebridge</id>
-	<name>Message Bridge</name>
-	<version>default</version>
+	<name>Message Bridge Module</name>
+	<version>1.0.0-SNAPSHOT</version>
 	<package>org.openmrs.module.messagebridge</package>
 	<author>niels</author>
 	<description>
-			Message Bridge module for OpenMRS
+			Sends appointment webhooks to external message service
 	</description>
 
 	<activator>org.openmrs.module.messagebridge.MessageBridgeActivator</activator>	
@@ -17,7 +17,7 @@
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/messagebridge/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
 	
-	<require_version>2.0.0</require_version>
+	<require_version>2.5.0</require_version>
 
 	<require_modules>
 		<require_module version="${appframeworkVersion}">
@@ -33,12 +33,6 @@
 			org.openmrs.module.appui
 		</require_module>
 	</require_modules>
-	
-	<!-- Extensions -->
-	<extension>
-		<point>org.openmrs.admin.list</point>
-		<class>org.openmrs.module.messagebridge.extension.html.AdminList</class>
-	</extension>
 
 	<aware_of_modules>
 		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
