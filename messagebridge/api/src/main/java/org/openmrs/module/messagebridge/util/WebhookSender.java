@@ -20,11 +20,11 @@ public class WebhookSender {
 	
 	public void send(AppointmentWebhookPayload payload) {
         try {
+            log.warn("Preparing to send message");
             String urlString = Context.getAdministrationService()
-                    .getGlobalProperty(
-                            "messagebridge.webhook.url",
-                            "http://localhost:8080/webhook/appointment"
-                    );
+                .getGlobalProperty("messagebridge.webhook.url");
+            
+            log.warn("Webhook URL: " + urlString);
 
             URL url = new URL(urlString);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -37,6 +37,8 @@ public class WebhookSender {
 
             String json = mapper.writeValueAsString(payload);
 
+            log.warn("Webhook payload JSON: " + json);
+
             try (OutputStream os = connection.getOutputStream()) {
                 os.write(json.getBytes("utf-8"));
             }
@@ -44,7 +46,7 @@ public class WebhookSender {
             int responseCode = connection.getResponseCode();
 
             if (responseCode >= 200 && responseCode < 300) {
-                log.info("Webhook sent successfully: " + responseCode);
+                log.warn("Webhook sent successfully: " + responseCode);
             } else {
                 log.warn("Webhook failed: " + responseCode);
             }
