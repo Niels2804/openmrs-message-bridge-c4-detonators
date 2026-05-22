@@ -29,4 +29,10 @@ public class AppointmentWebhookPayload {
 	public void setEvent(String event) {
 		this.event = event;
 	}
+	
+	@Override
+	public String toString() {
+		return "AppointmentWebhookPayload{" + "appointmentUuid='" + appointmentUuid + '\'' + ", event='" + event + '\''
+		        + '}';
+	}
 }

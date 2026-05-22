@@ -23,13 +23,25 @@ public class AppointmentEventListener {
 		
 		log.info("MessageBridge received event: " + event.getClass().getName());
 		
-		if (event.toString().toLowerCase().contains("appointment")) {
+		if (event.getClass().getSimpleName().equals("AppointmentBookingEvent")) {
 			
-			AppointmentWebhookPayload payload = new AppointmentWebhookPayload("unknown", "APPOINTMENT_EVENT");
-			
-			webhookSender.send(payload);
-			
-			log.info("Webhook triggered");
+			try {
+				// roept getAppointment() aan via reflection
+				Object appointment = event.getClass().getMethod("getAppointment").invoke(event);
+				
+				// roept getUuid() aan op appointment
+				String uuid = (String) appointment.getClass().getMethod("getUuid").invoke(appointment);
+				
+				AppointmentWebhookPayload payload = new AppointmentWebhookPayload(uuid, "APPOINTMENT_EVENT");
+				
+				webhookSender.send(payload);
+				
+				log.warn("UUID via reflection: " + uuid);
+				
+			}
+			catch (Exception e) {
+				log.error("Failed to extract appointment UUID", e);
+			}
 		}
 	}
 }
