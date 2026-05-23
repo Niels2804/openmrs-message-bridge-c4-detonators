@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.openmrs.module.messagebridge.api.dao.DefaultDaoTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.050 s -- in org.openmrs.module.messagebridge.api.dao.DefaultDaoTest

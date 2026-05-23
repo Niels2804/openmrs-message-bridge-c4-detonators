@@ -1,2 +1,3 @@
-org\openmrs\module\messagebridge\web\controller\DefaultController.class
 org\openmrs\module\messagebridge\fragment\controller\UsersFragmentController.class
+org\openmrs\module\messagebridge\web\controller\DefaultController.class
+org\openmrs\module\messagebridge\MessageBridgeActivator.class
