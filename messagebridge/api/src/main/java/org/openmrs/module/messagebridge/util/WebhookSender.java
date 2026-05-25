@@ -21,6 +21,9 @@ public class WebhookSender {
 	public void send(AppointmentWebhookPayload payload) {
         try {
             log.warn("Preparing to send message");
+
+            Thread.sleep(1000); // 1 second delay — adjust as needed
+
             String urlString = Context.getAdministrationService()
                 .getGlobalProperty("messagebridge.webhook.url");
             
