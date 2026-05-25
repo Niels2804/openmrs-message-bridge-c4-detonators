@@ -1,3 +1,2 @@
 org\openmrs\module\messagebridge\util\WebhookSender.class
 org\openmrs\module\messagebridge\model\AppointmentWebhookPayload.class
-org\openmrs\module\messagebridge\listener\AppointmentEventListener.class
